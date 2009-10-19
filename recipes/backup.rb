@@ -4,8 +4,9 @@
 #   after "backup:create", "backup:download"
 #
 
-_cset(:backup_path) { "#{shared_path}/backups" }
-_cset(:skip_backup_tables, ['sessions'])
+# XXX - robert - need to replace these with something that works
+#_cset(:backup_path) { "#{shared_path}/backups" }
+#_cset(:skip_backup_tables, ['sessions'])
 
 namespace :backup do
   def latest
